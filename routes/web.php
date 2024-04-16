@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CryptController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/crypt', [CryptController::class, 'index'])->name('crypt');
+Route::get('/greet', [CryptController::class, 'greet'])->name('greet');
 
-Route::get('/crypt',[CryptController::class,'index'])->name('crypt');
-Route::get('/decrypt/{status}', function () {
-    return 'test';
-})->name('decrypt');
-Route::middleware('decryptParams')->group(function ($router) {
-});
+Route::resource('products', ProductController::class);

@@ -24,17 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {   
-        $this->app->resolving(UrlGenerator::class, function (UrlGenerator $generator) {
-            $generator->getRoute($name, $parameters = [], $absolute = true);
-            // dd($generator);
-            // dd(345678);
-            // $route = request()->route();
-            // // dd($route);
-            // dd($route);
-            // $params = array_map(function ($value) { 
-            //     return encrypt($value);
-            // }, $route->parameters);
-            // $generator->route($route->uri, $params, true);
-        });
+
     }
 }

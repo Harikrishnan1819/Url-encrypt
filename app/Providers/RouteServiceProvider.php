@@ -35,12 +35,6 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        {
-            parent::boot();
-        
-            $this->app['router']->aliasMiddleware('encryptParams', \App\Http\Middleware\EncryptQueryParams::class);
-            $this->app['router']->aliasMiddleware('decryptParams', \App\Http\Middleware\DecryptQueryParams::class);
-        }
         $this->configureRateLimiting();
 
         $this->routes(function () {
