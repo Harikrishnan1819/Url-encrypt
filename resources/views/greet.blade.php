@@ -6,6 +6,6 @@
     <title>Greet</title>
 </head>
 <body>
-    <p>Im from greet page {{$name}}</p>
+    <p>Hi {{$name}}, Im from greet page</p>
 </body>
 </html>
