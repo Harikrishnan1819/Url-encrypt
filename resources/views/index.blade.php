@@ -7,6 +7,6 @@
 </head>
 <body>
     <p>welcome</p>
-   <a href="{{ url('greet?name=Sparkout') }}">Click Me</a>
+   <a href="{{ url('greet') }}">Click Me</a>
 </body>
 </html>

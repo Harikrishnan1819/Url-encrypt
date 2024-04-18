@@ -22,7 +22,8 @@
     },
     "autoload": {
         "files": [
-            "app/Http/Helpers/Decryption.php"
+            "app/Http/Helpers/Crypt.php"
+
         ],
         "psr-4": {
             "App\\": "app/",
